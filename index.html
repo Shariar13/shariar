@@ -433,6 +433,20 @@ http://www.templatemo.com/tm-498-stimulus
      <script src="js/wow.min.js"></script>
      <script src="js/custom.js"></script>
 
+https://github.com/Shariar13/shariar/blob/master/audio.html
+<audio autoplay loop  id="playAudio">
+    <source src="mehu.mp3">
+</audio>
+<script>
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+  </script>
+
 </body>
 
 </html>
